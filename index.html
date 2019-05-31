@@ -6,6 +6,7 @@
     <meta name="theme-color" content="#00BFFF" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bounceback Physiotherapy | Physiotherapy service in Castlebar</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
@@ -58,7 +59,7 @@
       </div>
         <div class="navbar-collapse collapse" id="navbar">
           <ul class="nav navbar-nav">
-          <li class="options"><a href="index.html">Home</a></li>
+          <li class="options hidden-sm"><a href="index.html">Home</a></li>
           <li class="options"><a href="pilates.html">Pilates</a></li>
           <li class="options"><a href="home-visits.html">Home Visits</a></li>
           <li class="options"><a href="contact.html">Contact Us</a></li>
@@ -99,7 +100,7 @@
                 </div>
               </div>
               <div class="row social-media-all">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 fb-widget">
                   <div class="social-media-left">
                     <div class="fb-page" data-href="https://www.facebook.com/BouncebackPhysiotherapyCastlebar/" height="436px" data-tabs="timeline, events, messages" data-small-header="false" data-adapt-container-width="true" data-adapt-container-height="false" data-hide-cover="false"
                       data-show-facepile="false">
@@ -108,7 +109,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 insta-widget">
                   <div class="social-media-center">
                     <a href="https://instawidget.net/v/user/bouncebackphysiotherapy" id="link-d4d4bfb6617c6487c0cc8d65a3d622e6c53313f217708c77d6eca0a7eefcd29a">@bouncebackphysiotherapy</a>
                     <script src="https://instawidget.net/js/instawidget.js?u=d4d4bfb6617c6487c0cc8d65a3d622e6c53313f217708c77d6eca0a7eefcd29a&width=328px"></script>
@@ -139,7 +140,7 @@
               </div>
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators review-carousel">
                   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                   <li data-target="#myCarousel" data-slide-to="1"></li>
                   <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -261,11 +262,7 @@
             <a href="https://www.iscp.ie/" target="_blank"><img class="footer-logo2" src="images/iscp.png"></a>
           </div>
         </div>
-        <div class="col-xs-4 col-sm-4 col-md-4">
-          <h5 class="uppercase" align="center">Contact</h5>
-          <p class="inline-block contact-envelope" align="center"><a data-toggle='modal' data-target='#contactModal'><i class="fa fa-envelope social-links"></i></a></p>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4">
+        <div class="col-xs-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
           <h5 class="uppercase">Social Media</h5>
           <ul class="list-inline social-links">
             <li><a class="facebook" target="_blank" href="https://www.facebook.com/BouncebackPhysiotherapyCastlebar/"><i class="fa fa-facebook"></i></a></li>
@@ -288,33 +285,19 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6">
+          <!--<div class="col-xs-12 col-sm-12 col-md-6">
             <div class="wrapper-appointment">
               <div class="row">
-                <p align="center"><i class="fas fa-calendar-check calendar-icon"></i></p>
+                <i class="fas fa-calendar-check calendar-icon"></i>
               </div>
               <div class="row">
-                <p align="center"><button class="timify-button online-apt" align="center" data-id="5bab7201c24c6a0f3ffb8b33">Book Online</button></p>
+                <button class="timify-button online-apt" data-id="5bab7201c24c6a0f3ffb8b33">Book Online</button>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6">
+          </div>-->
+          <div class="col-xs-12 col-sm-12 col-md-12 col-callback">
             <div class="wrapper-callback">
-              <form action="bouncebackphysiotherapy@mail.com" method="post" class="physio-apt">
-                <fieldset>
-                  <legend align="center">Request A Callback</legend>
-                  <label for="Name">Name:</label>
-                  <input type="text" class="form-name" name="name" id="name" maxlength="15" required size="10">
-                  <br>
-                  <label for="Phone Number">Number:</label>
-                  <input type="text" class="form-number" maxlength="15" required size="10">
-                  <br>
-                  <label for="Time For Call">Time To Call:</label>
-                  <input type="time" class="form-time" maxlength="8" required size="8">
-                  <br>
-                  <input type="submit" class="form-submit" align="right">
-                </fieldset>
-              </form>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf657ELYcQiTDbNSoJ9J15fUL2qq_swU1QfGY-YZ1c1SstglA/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
           </div>
         </div>
@@ -323,128 +306,6 @@
   </div>
 </div>
 
-
-<!--Contact Modal -->
-      <div class="modal fade modal-lg modal-apt" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" style="width:90%" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" align="center" id="myModalLabel">Booking An Appointment</h4>
-      </div>
-      <div class="modal-body">
-        <div class="hidden-xs">
-          <div class="contact-form">
-            <form name="contactform" method="POST" action="send_form_email.php">
-              <table width="450px">
-                <tr>
-                  <td valign="top">
-                    <label for="first_name">First Name *</label>
-                  </td>
-                  <td valign="top">
-                    <input type="text" name="first_name" maxlength="20" size="12">
-                  </td>
-                </tr>
-                <tr>
-                  <br>
-                  <td valign="top">
-                    <label for="last_name">Last Name *</label>
-                  </td>
-                  <td valign="top ">
-                    <input type="text " name="last_name " maxlength="20 " size="12 ">
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="top">
-                    <label for="email">Email*</label>
-                  </td>
-                  <td valign="top">
-                    <input type="text" name="email" maxlength="50" size="12">
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="top">
-                    <label for="telephone">Phone*</label>
-                  </td>
-                  <td valign="top">
-                    <input type="text" name="telephone" maxlength="40" size="12">
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="top">
-                    <label for="comments">Comments *</label>
-                  </td>
-                  <td valign="top">
-                    <textarea name="comments" maxlength="900" cols="16" rows="5"></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" style="text-align:center">
-                    <button class="button submit" type="submit" name="sendMail">Send Mail</button>
-                  </td>
-                </tr>
-              </table>
-            </form>
-          </div>
-        </div>
-        <div class="visible-xs hidden-sm hidden-md contact-modal">
-          <div class="contact-form-mobile">
-            <form name="contactform" method="post" action="send_form_email.php">
-              <table width="250px">
-                <tr>
-                  <td valign="top">
-                    <label for="first_name">First Name *</label>
-                  </td>
-                  <td valign="top">
-                    <input type="text" name="first_name" maxlength="15" size="6">
-                  </td>
-                </tr>
-                <tr>
-                  <br>
-                  <td valign="top">
-                    <label for="last_name">Last Name *</label>
-                  </td>
-                  <td valign="top ">
-                    <input type="text " name="last_name " maxlength="15" size="6">
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="top">
-                    <label for="email">Email*</label>
-                  </td>
-                  <td valign="top">
-                    <input type="text" name="email" maxlength="40" size="6">
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="top">
-                    <label for="telephone">Telephone *</label>
-                  </td>
-                  <td valign="top">
-                    <input type="text" name="telephone" maxlength="12" size="6">
-                  </td>
-                </tr>
-                <tr>
-                  <td valign="top">
-                    <label for="comments">Comments *</label>
-                  </td>
-                  <td valign="top">
-                    <textarea name="comments" maxlength="900" cols="10" rows="5"></textarea>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" style="text-align:center">
-                    <button class="button submit" type="submit" name="sendMail">Send Mail</button>
-                  </td>
-                </tr>
-              </table>
-            </form>
-          </div>
-        </div>
-            </div>
-          </div>
-        </div>
-      </div>
         
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

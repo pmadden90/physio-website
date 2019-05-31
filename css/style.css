@@ -35,14 +35,14 @@ h3 {
 
 .options {
     text-align: center;
-    padding: 2px 20px 2px 20px;
+    padding: 2px 10px 2px 10px;
     font-weight: 400;
     font-size: 20px;
     }
 
 .options:hover {
     text-align: center;
-    padding: 2px 20px 2px 20px;
+    padding: 2px 10px 2px 10px;
     background-color: #00BFFF;
     font-weight: 400;
     font-size: 20px;
@@ -71,9 +71,7 @@ h3 {
     padding-top: 5px;
     width: 100%;
     position: absolute;
-    bottom: -5;
-    left: 0;
-    right: 0;
+    bottom: -1;
     color: #000000;
     font-size: 18px;
     }
@@ -168,13 +166,13 @@ h3 {
     border-color: #90949c;
     }
 
-/*End*/
 
-/*Appointment Modal*/
+/*Appointments*/
 
 .calendar-icon {
     color: #00BFFF;
     font-size: 80px;
+    top: 35%;
     }
 
 .wrapper-callback {
@@ -182,7 +180,6 @@ h3 {
     flex: 1;
     padding: 1rem;
     width: 100%;
-    height: 200px;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: left;
@@ -197,18 +194,33 @@ h3 {
     margin-bottom: 5px;
     width: 100%;
     height: 200px;
+    vertical-align: middle;
     }
 
+.col-callback {
+    overflow: auto;
+    height: 1%;
+}
 
+.wrapper-contactform {
+    background-color: #00BFFF;
+    overflow: hidden;
+    height: 60vh;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 .modal {
     text-align: center;
     padding: 0;
     margin: 0 auto;
-    width: 95vw;
     }
 
 .modal-apt {
+    width: 95vw;
     text-align: center;
+    height: 100%;
     }
     
 .physio-apt {
@@ -216,9 +228,13 @@ h3 {
     }
 
 .contact-modal {
-    font-size: 16px;
-    width: auto;
-    align-items: center;
+    width: 95vw;
+    text-align: center;
+    height: 100%;
+    }
+    
+.contact-modal .modal-content {
+    background-color: #FFF;
     }
 
 .online-apt {
@@ -227,9 +243,10 @@ h3 {
     font-weight: 300;
     font-size: 20px;
     border-color: #90949c;
+    margin: auto;
+    
     }
 
-/*End*/
 
 /*Facebook Plugin*/
 
@@ -242,6 +259,18 @@ element.style {
 .social-media-all {
     background-color: #FFFFFF;
     }
+    
+.insta-widget {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+   
+.fb-widget {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;  
+}
 
 .social-media-left {
     background-color: #FFFFFF;
@@ -274,7 +303,7 @@ element.style {
     }
 
 .content-container {
-    background-color: #D3D3D3;
+    width: 100%;
     }
 
 .left-half {
@@ -305,22 +334,44 @@ element.style {
 
 .container-wrapper-reviews {
     background-color: #00BFFF;
+    padding-bottom: 90px;
     }
+    
+.carousel-indicators {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+    padding-top: 24px;
+}
+
+.review-carousel {
+    margin-bottom: -35px;
+}
 
 .features-container {
     padding-bottom: 10px;
     }
 
-/*-------------------------------------------------------pilates.html*/
+/*--pilates.html*/
 .contact-link {
     text-decoration: none;
     color: #00BFFF;
     font-size: 18;
     font-weight: 600;
+    padding-bottom: 10px;
     
 }
 
-/*-------------------------------------------------------About.html*/
+/*--About.html*/
+.aboutus-page {
+    height: 110vh;
+}
 
 /*Louise's Timeline*/
 
@@ -390,8 +441,10 @@ element.style {
 
 .about-business {
     background-color: #FAFAFA;
-    font-size: 20px;
+    font-size: 16px;
+    margin-top: 10px;
     margin: 10px 10px 10px 10px;
+    height: 30vh;
     }
 
 .about-louise {
@@ -422,13 +475,30 @@ element.style {
     color: #000000;
 }
 
+.home-pic img {
+    width: 100%;
+}
+
 /*-------------------------Contact.html*/
+.contact-us {
+    width: 100%;
+    padding-left: 30px;
+}
 
 .contact-form {
     background-color: #00BFFF;
     border-color: #708090;
     border-style: groove;
     width: 100%;
+    padding-left: 15px;
+    }
+    
+    .contact-form2 {
+    background-color: #00BFFF;
+    border-color: #708090;
+    border-style: groove;
+    width: 100%;
+    height: auto;
     padding-left: 15px;
     }
 
@@ -456,9 +526,9 @@ element.style {
 /* Large desktop */
 @media (min-width: 1400px) {
     #contactModal {
-            width: 60%;
-            margin-left: 150px;
-            margin-right: 100px
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .contact-form {
@@ -474,6 +544,11 @@ element.style {
         
         .contact-form table {
             width: 75%;
+        }
+        
+        .contact-us {
+            width: 100%;
+            padding-left: 30px;
         }
         
         #appointmentModal {
@@ -496,29 +571,52 @@ element.style {
              margin-left: 17px;   
         }
         
-        .wrapper-callback {
-        height: 200px;
-        padding-left: 160px;
-        }
-        
         .wrapper-callback legend {
         text-align: left;
         }
+        
+        .wrapper-callback {
+            height: 75vh;
+        }
 
         .wrapper-appointment {
-        height: 200px;
+        height: 75vh;
+        vertical-align: middle;
+        padding-top: 30vh;
+        }
+        
+        .modal-content {
+        height: 85vh;
         }
         
         .footer-bounceback {
             bottom: -1px;
         }
+        
+        .container-wrapper-reviews {
+        background-color: #00BFFF;
+        padding-bottom: 150px;
+        }
+        
+        .about-business {
+            height: 30vh;
+            margin-top: 10px;
+        }
     }
 
 @media (min-width: 980px) and (max-width: 1399px) {
+        
+        .options {
+        text-align: center;
+        padding: 2px 10px 2px 10px;
+        font-weight: 400;
+        font-size: 16px;
+        }
+        
         #contactModal {
             width: 60%;
-            margin-left: 150px;
-            margin-right: 100px
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .contact-form {
@@ -537,6 +635,11 @@ element.style {
             width: 75%;
         }
         
+        .contact-us {
+            width: 100%;
+            padding-left: 30px;
+        }
+        
         #appointmentModal {
             width: 100%;
         }
@@ -557,32 +660,51 @@ element.style {
              margin-left: 17px;   
         }
         
-        .wrapper-callback {
-        height: 200px;
-        padding-left: 100px;
-        }
         
         .wrapper-callback legend {
         text-align: left;
         }
 
+        .wrapper-callback {
+            height: 75vh;
+            overflow-x: scroll;
+        }
+
         .wrapper-appointment {
-        height: 200px;
+        height: 75vh;
+        vertical-align: middle;
+        padding-top: 30vh;
+        }
+        
+        .modal-content {
+        height: 100vh;
         }
         
         .footer-bounceback {
             bottom: -1px;
+            height: 20vh;
         }
-    }
+        
+        
+        .container-wrapper-reviews {
+            background-color: #00BFFF;
+            padding-bottom: 150px;
+        }
+        
+        .about-business {
+            height: 30vh;
+            margin-top: 10px;
+        }
+}
 
 
 /* Portrait tablet to landscape and desktop */
 
 @media (min-width: 768px) and (max-width: 979px) {
         #contactModal {
-            width: 60%;
-            margin-left: 150px;
-            margin-right: 100px
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .contact-form {
@@ -599,6 +721,11 @@ element.style {
             width: 75%;
         }
         
+        .contact-us {
+            width: 100%;
+            padding-left: 30px;
+        }
+        
         #appointmentModal {
             width: 100%;
         }
@@ -608,7 +735,10 @@ element.style {
         }
         
         #appointmentModal .wrapper-callback {
-             padding-left: 175px;   
+             margin-left: auto;
+             margin-right: auto;
+             height: 60vh;
+             overflow-x: scroll;
         }
         
         #appointmentModal fieldset {
@@ -627,6 +757,35 @@ element.style {
              margin-left: 29px;   
         }
     
+        .options {
+            text-align: center;
+            padding: 2px 10px 2px 10px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        
+        .footer-bounceback {
+            bottom: -1;
+        }
+        
+        .pilates-page {
+            height: 90vh;
+        }
+        
+        .home-visits-page {
+            height: auto;
+        }
+        
+        .container-wrapper-reviews {
+        background-color: #00BFFF;
+        padding-bottom: 150px;
+        }
+        
+        .about-business {
+            height: 40vh;
+            font-size: 14px;
+            margin-top: 10px;
+        }
     }
 
 
@@ -634,9 +793,9 @@ element.style {
 
 @media (max-width: 767px) {
         #contactModal {
-            width: 90%;
-            margin-left: 40px;
-            margin-right: 30px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .contact-form {
@@ -659,7 +818,7 @@ element.style {
         
         
         #appointmentModal .wrapper-callback {
-             padding-left: 5px;   
+            height: 90vh;        
         }
         
         #appointmentModal .form-name {
@@ -675,12 +834,42 @@ element.style {
         }
         
         .wrapper-callback {
-        height: auto;
-        padding-left: 5px;
+            height: 60vh;
         }
 
         .wrapper-appointment {
-        height: auto;
+            height: auto;
+        }
+        
+        .options {
+            text-align: center;
+            padding: 2px 10px 2px 10px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        
+        .contact-us {
+            width: 100%;
+            padding-left: 30px;
+        }
+        
+        .footer-bounceback {
+            bottom: -1;
+        }
+        
+        .pilates-page {
+            height: 90vh;
+        }
+        
+        .container-wrapper-reviews {
+            background-color: #00BFFF;
+            padding-bottom: 150px;
+        }
+        
+        .about-business {
+            height: 50vh;
+            font-size: 14px;
+            margin-top: 10px;
         }
     
     }
@@ -689,9 +878,9 @@ element.style {
 
 @media (max-width: 480px) {
         #contactModal {
-            width: 60%;
-            margin-left: 150px;
-            margin-right: 100px
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .contact-form {
@@ -729,9 +918,7 @@ element.style {
         }
         
         .wrapper-callback {
-        height: auto;
-        margin-left: 5px;
-        padding-left: 5px;
+        height: 75vh;
         }
 
         .wrapper-appointment {
@@ -750,6 +937,26 @@ element.style {
         .history {
             margin-bottom: 110px;
         }
+        
+        .contact-us {
+            width: 100%;
+            padding-left: 30px;
+        }
+        
+        .container-wrapper-reviews {
+            background-color: #00BFFF;
+            padding-bottom: 150px;
+        }
+        
+        .about-business {
+            height: 45vh;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        
+        .above-footer {
+            margin-bottom: 20px;
+        }
     
     }
 
@@ -758,8 +965,13 @@ element.style {
 
 @media (min-width: 250px) and (max-width: 321px) {
 
+    #contactModal {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    .footer {
+    .footer-bounceback {
         min-height: 50vh;
         bottom: -1px;
         width: 100%;
@@ -770,19 +982,44 @@ element.style {
         }
         
         .wrapper-callback {
-        height: auto;
+        height: 75vh;
         }
 
         .wrapper-appointment {
-        height: auto;
+            height: auto;
         }
         
         .callout-container {
             width: 100vw;
         }
         
-        .footer-bounceback {
-            bottom: -1px;
+        .contact-us {
+            width: 100%;
+            padding-left: 15px;
         }
-    
+        
+        .wrapper-contactform {
+            background-color: #00BFFF;
+            height: 60vh;
+            width: 70vw;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        
+        .iframe-contactform {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .container-wrapper-reviews {
+            background-color: #00BFFF;
+            padding-bottom: 150px;
+        }
+        
+        .about-business {
+            height: 40vh;
+            font-size: 14px;
+            margin-top: 10px;
+        }
     }
